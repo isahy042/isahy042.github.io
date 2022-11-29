@@ -333,7 +333,7 @@ h6 {
     font-weight: 800;
     letter-spacing: 0.25em;
     line-height: 1.25;
-    margin: 0 0 1.5em 0;
+    margin: 0 0 0.5em 0;
     text-transform: uppercase;
 }
 
@@ -3232,11 +3232,11 @@ body.single #wrapper {
     margin-top: 100px;
     overflow: hidden;
     position: relative;
-    width: 10em;
+    width: 16em;
 }
 
 #intro .logo:before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200px' height='200px' viewBox='0 0 100 100' preserveAspectRatio='none' zoomAndPan='disable'%3E%3Cpolygon points='0,0 100,0 100,25 50,0 0,25' style='fill:%23f4f4f4' /%3E%3Cpolygon points='0,100 100,100 100,75 50,100 0,75' style='fill:%23f4f4f4' /%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300px' height='300px' viewBox='0 0 100 100' preserveAspectRatio='none' zoomAndPan='disable'%3E%3Cpolygon points='0,0 100,0 100,25 50,0 0,25' style='fill:%23f4f4f4' /%3E%3Cpolygon points='0,100 100,100 100,75 50,100 0,75' style='fill:%23f4f4f4' /%3E%3C/svg%3E");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -3251,8 +3251,8 @@ body.single #wrapper {
 #intro .logo img {
     display: block;
     text-align: center;
-    width: 10em;
-    height: 15em;
+    width: 16em;
+    height: 24em;
 }
 
 #intro header h2 {

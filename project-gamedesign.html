@@ -1,77 +1,21 @@
-<!DOCTYPE HTML>
-<!--
--->
+
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-face.prod.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-face-aframe.prod.js"></script>
+  </head>
+  <body>
+    <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-assets>
+	<a-asset-item id="glassesModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/examples/face-tracking/assets/glasses/scene.gltf"></a-asset-item>
+      </a-assets>
 
-<head>
-    <title>Isa Lie | Projects | AR Interactive</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-</head>
-
-<body class="single is-preload">
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <!-- Header -->
-        <header id="header">
-            <h1><a href="home.html">Isa Lie</a></h1>
-
-            <nav class="links">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
-                </ul>
-            </nav>
-        </header>
-
-
-        <!-- Project Description -->
-        <div id="main">
-
-            <!-- Post -->
-            <article class="post">
-                <header>
-                    <div class="title">
-                        <h2><a href="#">Magna sed adipiscing</a></h2>
-                        <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
-                    </div>
-                </header>
-
-
-
-            </article>
-
-        </div>
-
-
-    </div>
-
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-face.prod.js"></script>
-        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-face-aframe.prod.js"></script>
-      </head>
-      <body>
-        <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
-          <a-camera active="false" position="0 0 0"></a-camera>
-          <a-entity mindar-face-target="anchorIndex: 1">
-      <a-sphere color="green" radius="0.1"></a-sphere>
-          </a-entity>
-        </a-scene>
-      </body>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
-
+      <a-camera active="false" position="0 0 0"></a-camera>
+      <a-entity mindar-face-target="anchorIndex: 168">
+	<a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.01 0.01 0.01" src="#glassesModel"></a-gltf-model>
+      </a-entity>
+    </a-scene>
+  </body>
 </html>
