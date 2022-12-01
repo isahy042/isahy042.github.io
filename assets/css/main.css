@@ -123,8 +123,8 @@ p.capitalize {
     height: 30px;
     width: 30px;
     position: relative;
-    top: 10px;
-    right: 10px;
+    top: 0px;
+    right: 0px;
 }
 
 body {
@@ -176,17 +176,11 @@ textarea {
     -ms-appearance: none;
     appearance: none;
 }
+#lead { position: relative; float: left; clear: both;
+        width: 100%; height: 300px;
+        background: #dbdbdb url(../images/lead_photo.jpg) center no-repeat; }
 
-
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
+#iframe { position: absolute; float: left; clear: both; width: 100%; height: 350px; z-index: 0; left no-repeat; }
 
 /* Basic */
 
@@ -240,7 +234,7 @@ input,
 select,
 textarea {
     color: #646464;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: "Raleway", Helvetica, sans-serif;
     font-size: 14pt;
     font-weight: 400;
     line-height: 1.75;
@@ -310,11 +304,11 @@ a:before {
 
 a:hover {
     border-bottom-color: transparent;
-    color: #2ebaae !important;
+    color: #9b88a5 !important;
 }
 
 a:hover:before {
-    color: #2ebaae !important;
+    color: #9b88a5 !important;
 }
 
 strong,
@@ -329,7 +323,7 @@ i {
 }
 
 p {
-    margin: 0 0 0.3em 0;
+    margin: 0 0 1em 0;
 }
 
 h1,
@@ -1679,6 +1673,17 @@ hr.major {
 .blurb p {
     font-size: 0.9em;
 }
+
+/* hoverable icon buton*/
+
+#logo-holder {position:relative; width:70px; height:50px; display: inline-block; margin:0em 0.5em 0 0.5em; }
+#logo-holder .image { position:absolute; top: 50%;left:50%;transform: translate(-50%, -50%);width:40px ; height:40px;}
+#logo-holder .text {transition: opacity 0.5s ease-in-out; font-family: "Raleway"; line-height:0.9}
+#logo-holder .text {position:absolute; opacity:0; top: 50%;left:50%;transform: translate(-50%, -50%);}
+
+#logo-holder:hover .image {opacity:0;}
+#logo-holder:hover .text {opacity:1;}
+
 
 
 /* Box */
@@ -3402,7 +3407,7 @@ body.single #footer {
 }
 
 #menu .links>li a:hover h3 {
-    color: #2ebaae;
+    color: #ad95b7;
 }
 
 #menu .links>li:first-child {
