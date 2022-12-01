@@ -1676,7 +1676,7 @@ hr.major {
 
 /* hoverable icon buton*/
 
-#logo-holder {position:relative; width:70px; height:50px; display: inline-block; margin:0em 0.5em 0 0.5em; }
+#logo-holder {position:relative; width:70px; height:50px; display: inline-block; margin:0em 0.5em 5em 0.5em; }
 #logo-holder .image { position:absolute; top: 50%;left:50%;transform: translate(-50%, -50%);width:40px ; height:40px;}
 #logo-holder .text {transition: opacity 0.5s ease-in-out; font-family: "Raleway"; line-height:0.9}
 #logo-holder .text {position:absolute; opacity:0; top: 50%;left:50%;transform: translate(-50%, -50%);}
@@ -1684,8 +1684,30 @@ hr.major {
 #logo-holder:hover .image {opacity:0;}
 #logo-holder:hover .text {opacity:1;}
 
+/* collapsable*/
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
+.active, .collapsible:hover {
+  background-color: #555;
+}
 
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
 /* Box */
 
 .box {
