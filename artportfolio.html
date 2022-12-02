@@ -8,6 +8,67 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    /* The grid: Four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 11%;
+      padding: 10px;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    .column img:hover {
+      opacity: 1;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* The expanding image container */
+    .container {
+      position: absolute;
+      z-index: 50;
+      vertical-align: middle;
+      display: none;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      color: white;
+      font-size: 20px;
+    }
+
+    /* Closable button inside the expanded image */
+    .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 40%;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+    </style>
 </head>
 
 <body class="single is-preload">
@@ -28,13 +89,64 @@
         </header>
 
         <body style="background-color: #999999;">
-            <center>
-                <h1>Art Portfolio</h1>
-                <object data="content/Lie_Isa_Resume.pdf"
-                        width="800"
-                        height="500">
-                </object>
-            </center>
+
+
+          <div style="text-align:center">
+            <h2>Art Gallery</h2>
+          <p>Click on the images below to view close up and description.</p>
+          </div>
+
+          <!-- The four columns -->
+          <div class="row" height="50">
+            <div class="column">
+              <img src="ap/1.png" alt="Pillow Study | Charcoal " style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="ap/2.png" alt="Stage Idol | Digital" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="ap/3.png" alt="Paint | Charcoal" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="ap/4.png" alt="Boots and Duckie | Charcoal" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="ap/5.png" alt="Close Up Hand Study | Digital" style="width:100%" onclick="myFunction(this);">
+            </div>
+
+            <div class="column">
+              <img src="ap/6.png" alt="Stage Idol 2 | Digital" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="ap/7.png" alt="Butterfly Boy | Digital" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="ap/8.png" alt="Stucked on the Moon | Digital" style="width:100%" onclick="myFunction(this);">
+            </div>
+
+            <div class="column">
+              <img src="ap/10.png" alt="Blueberries | Watercolor" style="width:100%" onclick="myFunction(this);">
+            </div>
+          </div>
+
+
+          <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:50%; float:middle;">
+            <div id="imgtext"></div>
+          </div>
+
+          <script>
+          function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+          }
+          </script>
+
+
         </body>
 
     <!-- Scripts -->

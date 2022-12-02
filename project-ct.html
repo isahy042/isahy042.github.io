@@ -13,7 +13,7 @@
 <body class="single is-preload">
 
   <!-- Wrapper -->
-  <div id="wrapper">
+  <div id="wrapper" style="background-color:#4E5058">
 
     <!-- Header -->
     <header id="header">
@@ -32,23 +32,30 @@
     <div id="main">
 
       <!-- Post -->
-      <article class="post">
+      <article class="post" style="background-color:#D0D2D9">
         <header>
           <div class="title">
             <h2><a href="#">Project · Creacher Teacher</a></h2>
             <p>Learn the Ancient Art of Creating Color</p>
           </div>
         </header>
+        <a href="https://drive.google.com/drive/folders/1HFndDOJmBMn6rwqpJeFgbWaedmR4GCRN?usp=sharing" class="button margin-auto" style="margin:5px;">Download Game (Google Drive)</a>
+        <a href="https://github.com/ao2646a/CreacherTeacher2.git" class="button margin-auto" style="margin:5px;">Github Link</a>
 
+<p></p>
         <p>The Creacher Teacher Magician Trade School is a world in which every student can get in touch with their inner artist and mage. Through the use of music, decorative objects, and a 3D wizard’s lair, one is transported into a unique Harry Potter-like land to learn the ancient art of creating color. Our goal is to make learning fun, foster creativity, and teach a spell or two. Upon beginning The Creacher Teacher Magician Trade School, users will be situated in a magician’s potion room with a cauldron and three flasks of liquid meant for mixing. In our attempt to teach color theory, users will also be presented with a color they will have to recreate. Users will have to drag a specific combination of their flasks over the cauldron to create the desired outcome color. This new color can be used to make different potions and is also immediately added to the achievement-based potion book on the top right corner of the screen. In order to beat the level one has to make all six possible potions, consequently completing the potion book.
         </p>
+        <div style="float:right; padding:15px;" >
+          <img src="images/ctcover.png" width=500px>
+        </div>
         <p>As our game is specifically designed for educational purposes for an audience of children ages 4 - 12, simple controls, clear directions, and a non-consequence driven environment are imperative. In hopes of teaching how to play the game through experience, users’ three initial flasks are red, yellow, and blue, or the primary colors. The new color they attempt to recreate starts off easy by only requiring one of the flasks to be dragged over the cauldron. This way users can learn the main mechanic of our game without any text on the screen. Additionally, a white dot in the middle of the screen shows where they need to focus their attention, providing further directions on navigation and user controls in combination with the tutorial. As users get more comfortable with the game mechanic and user controls, the output color gets more difficult to achieve, sometimes requiring a combination of different flasks. It is important to note, however, if one messes up and the potion does not look like the desired color, an extra empty flask can be dragged over the cauldron to remove the contents via pouring the excess into the “trashcan”. Even the best magicians need an undo button.
         </p>
-        <p>Working in a team of 3, we were all involved in the design process and divided implementation and documentation according to each member’s speciality. As the only member with sufficient knowledge in Computer Science, I was mainly in charge of programming the gameplay and UI.
+        <p>Working in a team of 3, we were all involved in the design process and divided implementation and documentation according to each member’s speciality. As the only member with sufficient knowledge in Computer Science, I was mainly in charge of programming the gameplay, including the tutorial and UI.
         </p>
 
         <button class="collapsible">Design Process</button>
         <div class="content">
+          <p></p>
           <p>The Creature Teacher Potion Mixing School vision was to create a 3D potion mixing game that is enchanting to look at, fun to play and informational at the same time without being too overwhelming at any point or too complicated. Our game is the intersection of the fantasy world and the inner artist, a fun and interactive potion mixing game to teach people color theory, aimed at the explorer and the achiever.
           </p><p>Our main target audience is children ages 4 - 12 seeking to learn more about color theory. However, there are no constraints on who can play the game, any age range or gender can appreciate the lessons from The Creacher Teacher Potion Mixing School, however we do expect it to be more engaging for younger people rather than older ones, especially in terms of game play time. We have aimed game play at the achiever and explorer. The aura of the game is reminiscent of Harry Potter style, with a spooky twist. The core experience of our game is color theory, mixing potions in a cauldron and creating a new potion to compare with the desired output, attempting to mix the correct colors to see what color they will make and achieve each color in the primary and second color library.
           </p><p>We found from playtesting on the available demographics (unable to test on our target audience due to covid constraints) that the game needed considerable tutorial and instruction because just being placed in a room did not convey to many players the purpose of the game. We also found that some players spent more time exploring the scene than they did using the main mechanic of potion mixing. To combat this we worked to make the game more tutorial oriented, with just using the red, blue and yellow color potions at first and adding AI directional elements.
@@ -59,6 +66,7 @@
           </div>
           <button class="collapsible">Implementation Structure</button>
           <div class="content">
+            <p></p>
             <p>The game mechanic that we based our game design off of is the mixing of positions. This means creating the potion bottle prefab, figuring out a way to make liquid inside the bottle, being able to mix one liquid with another, and then the changing of one liquid into another color.
             </p><p>For the actual potion prefab we looked into making it have a physical liquid in it however it is incredibly difficult to implement the physics mechanics necessary in Unity to make a liquid possible, so we had to find another avenue due to time constraints (see potion screen). We created a prefab with a nested child to act as the ‘liquid’ which was just a sphere with a rigid body and a hinge to the potion bottle to give it the effect of rolling round, this gives the effect of a moving liquid without actual liquid physics. We wanted the object inside the flask to be more than a sphere so we used  Blender to create a sphere that was a half circle. We needed to be careful with the pivot, for it should rotate around the center. When we exported the mesh as an FBX it included the camera controller so instead we exported it as an OBJ. Finally we used a hinge joint and two rigid bodies to create liquid visuals.
             </p><p>We devised a few different ways in which to approach our main mechanic, the first being pouring one liquid into another, however once we ruled out using actual liquids we also thought about dragging one potion onto another and having the colors merge. However this creates an issue where the color of potion is forever changed, meaning that if red was used to make orange, you could not use red again.
@@ -71,7 +79,8 @@
           </div>
           <button class="collapsible">Game Analysis</button>
           <div class="content">
-            <p>Our game appeals to those who play to explore new levels (“explorer”) and gain achievements (“achiever”) . The explorer can be excited by mixing new colors and trying different variations, as well as exploring the room. The achiever, however, can be excited by mixing each potion correctly and getting all the potions in the spell book. 
+            <p></p>
+            <p>Our game appeals to those who play to explore new levels (“explorer”) and gain achievements (“achiever”) . The explorer can be excited by mixing new colors and trying different variations, as well as exploring the room. The achiever, however, can be excited by mixing each potion correctly and getting all the potions in the spell book.
             </p><p>We followed Jakob Nielsen’s 10 golden rules when designing the UI, including making sure all buttons are concise and consistent. Our game does look the other way at a few rules, because it is designed for children. For example, Jakob Nielsen’s 10th rule on help and directions says that a good game does not need much in the way of instructions however since we are aiming our game at a broad range of children it is the first and foremost priority to make sure the children understand how to play the game, therefore we have implemented some subtle game directions to help the user.
             </p><p>According to Tracy Fullerton’s Game Design Principles, our game does a successful job of avoiding redundancy and unnecessary information. There could be an argument made that some directions are unnecessary but for children under the age of 10 this is not the case and therefore our game is not unnecessary or redundant to our target audience.
             </p>
