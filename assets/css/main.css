@@ -1664,13 +1664,13 @@ header>p {
 header.major {
 	position: relative;
 	text-align: center;
-	border-top: solid 1px #ccc;
+	border-top: solid 1px #cccccc;
 	top: 1em;
 	margin: 0 0 3em 0;
 }
 
 header.major h2 {
-	background: #fff;
+	background: #252122;
 	position: relative;
 	top: -0.65em;
 	display: inline;
@@ -1686,8 +1686,9 @@ footer {
 
 .box {
 	background: #ffffff;
-	border-bottom: solid 1px #ccc;
+	border: solid 1px #ccc;
 	padding: 2.75em 1.75em 2.75em 1.75em;
+	border-radius: 0.5em;
 }
 
 .box .image.featured {
@@ -1698,9 +1699,14 @@ footer {
 	margin: -4.5em 0 4.25em -3.5em;
 }
 
+.box .image.featured img {
+	border-radius: 0.5em 0.5em 0 0;
+}
+
 .box.post header {
 	padding-top: 1em;
 	margin: 0 0 2em 0;
+
 }
 
 .box.post h2 {
@@ -1708,13 +1714,30 @@ footer {
 	letter-spacing: -0.015em;
 }
 
+.box header h3 {
+	font-size: 1.5em;
+	margin: -1em 0 -1em 0;
+}
+
+.box p {
+	font-size: 1em;
+	line-height: 120%;
+	margin: 0.5em 0 0 0;
+
+}
+
 .box.post header>p {
 	margin-top: 1.25em;
 	font-size: 1.25em;
 }
 
+.box footer {
+	margin: 1em 0 -0.5em 0;
+}
+
 .box footer ul.actions {
 	margin-bottom: 0;
+
 }
 
 /* Button */
@@ -2194,8 +2217,8 @@ ul.social li a.fa-google-plus:hover {
 
 #header {
 	position: relative;
-	background: #ffffff;
-	border-bottom: solid 1px #ccc;
+	background: #dde0e0;
+	border-bottom: solid 1px #cccccc77;
 	padding: 1em 0 1em 0;
 	text-align: center;
 }
@@ -2212,6 +2235,7 @@ ul.social li a.fa-google-plus:hover {
 
 #nav {
 	margin: 0 0 0 0;
+
 }
 
 #nav>ul {
@@ -2349,6 +2373,8 @@ ul.social li a.fa-google-plus:hover {
 	/* Some padding */
 	font-size: 1em;
 	font-style: normal;
+	text-decoration: none;
+	font-weight: bold;
 	/* Set a font size */
 	cursor: pointer;
 	-moz-transition: background-color .25s ease-in-out;
@@ -2424,7 +2450,7 @@ ul.social li a.fa-google-plus:hover {
 
 #main {
 	position: relative;
-	background: #f7f7f7 url("images/bg02.png");
+	background: #353434;
 	padding: 4em 0 4em 0;
 }
 
@@ -2492,7 +2518,7 @@ ul.social li a.fa-google-plus:hover {
 #footer ul.dates li,
 #footer ul.divided li {
 	border-top-color: #353434;
-	border-top-color: rgba(255, 255, 255, 0.05);
+	border-top-color: rgba(255, 255, 255, 0.1);
 }
 
 #footer header {
@@ -2513,7 +2539,7 @@ ul.social li a.fa-google-plus:hover {
 #copyright ul.links {
 	display: inline-block;
 	background: #2C2929;
-	background: rgba(255, 255, 255, 0.05);
+	background: rgba(255, 255, 255, 0.1);
 	border-radius: 5px;
 	margin: 0;
 	padding: 0.85em 2.25em 0.85em 2.25em;
@@ -2957,7 +2983,7 @@ ul.social li a.fa-google-plus:hover {
 
 	.box.post header {
 		padding-top: 0;
-		margin: 0 0 1em 0;
+		margin: 0 0 0em 0;
 	}
 
 	.box.post h2 {

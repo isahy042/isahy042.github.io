@@ -16,9 +16,16 @@
         <nav id="nav">
           <ul>
             <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="left-sidebar.html">Left Sidebar</a></li>
-            <li><a href="right-sidebar.html">Right Sidebar</a></li>
-            <li><a href="no-sidebar.html">No Sidebar</a></li>
+            <li> <a href="projects.html">Projects</a>
+              <ul>
+                <li><a href="projects.html#academic">Academic &amp; Course
+                    Projects</a></li>
+                <li><a href="projects.html#research">Research</a></li>
+                <li><a href="projects.html#personal">Personal Projects</a></li>
+              </ul>
+            </li>
+            <li><a href="courses.html">Related Courses<br>
+              </a></li>
           </ul>
         </nav>
       </section>
@@ -30,7 +37,8 @@
           </header>
           <div class="row">
             <div class="col-4 col-6-medium col-12-small">
-              <section> <i class="image featured"><img src="images/headshot.jpg"
+              <section> <i class="image featured"><img src="images/headshot.jpg"
+
                     alt="" style="width: 17em; height: 17em; border-radius: 0.5em;"></i>
                 <p> I am a master's student enrolled in the <a href="https://www.csd.cs.cmu.edu/academics/masters/ms-in-computer-science">
                     M.S. in Computer Science (MSCS)</a> program at Carnegie
@@ -38,7 +46,8 @@
                   Graphics. </p>
                 <footer> <a href="projects.html" class="btn" style="text-decoration:none">
                     My Projects </a> <a href="resume.html" class="btn" style="text-decoration:none">
-                    <i class="fa fa-bars"></i> Resume</a> <a href="https://www.linkedin.com/in/isahy/"
+                    <i class="fa fa-bars"></i> Resume</a> <a href="https://www.linkedin.com/in/isahy/"
+
                     class="btn" style="margin: -0.2em"> <i class="icon brands fa-linkedin-in">
                     </i></a> </footer>
               </section>
@@ -161,19 +170,19 @@
                 </table>
                 <ul style="margin: 0 2em 0 0">
                   <li>Implemented features to modernize CareWebQI, a platform
-                    streamlining care coordination, resulting in an enhanced
-                    display of over 70,000 medical care guidelines and smoother
-                    user experience</li>
-                  <li>Developed a proof of concept using multi-tenant Azure
-                    Functions, demonstrating the feasibility of a solution that
-                    improved data accessibility by enabling same-day batch
-                    processing of patient episode summaries in the SQL client
-                    databases of 2,800+ hospitals</li>
+                    streamlining care coordination, resulting in an <b>enhanced
+                      display of over 70,000 medical care guidelines and
+                      smoother user experience</b></li>
+                  <li>Developed a proof of concept using <b>multi-tenant Azure
+                      Functions</b>, demonstrating the feasibility of a solution
+                    that<b> improved data accessibility by enabling same-day
+                      batch processing of patient episode summaries in the SQL
+                      client databases of 2,800+ hospitals</b></li>
                   <li>Streamlined patient data exchange between CareWebQI and
                     partnering platforms using SMART on FHIR, improving
                     interoperability and data consistency</li>
                 </ul>
-                <hr>
+                <hr style = "border-color: rgba(255, 255, 255, 0.1);">
                 <table style="width: 100%;" border="none">
                   <tbody>
                     <tr>
@@ -193,13 +202,13 @@
                     function and interior of the scanning electron microscope</li>
                   <li>Designed and implemented interactive features that
                     significantly improved user immersion and engagement,
-                    resulting in a 17% increase in training accuracy compared to
-                    traditional methods</li>
+                    resulting in a <strong>17% increase in training accuracy</strong>
+                    compared to traditional method</li>
                   <li>Compiled and implemented student and instructor feedback
-                    to support lab implementation of developed software for two
-                    MIT engineering courses with a total of 40 students</li>
+                    to support lab implementation of developed software for<strong>
+                      two MIT engineering courses with a total of 40 students</strong></li>
                 </ul>
-                <hr>
+                <hr style = "border-color: rgba(255, 255, 255, 0.1);">
                 <table style="width: 100%;" border="none">
                   <tbody>
                     <tr>
@@ -215,10 +224,11 @@
                 </table>
                 <ul style="margin: 0 2em 0 0">
                   <li>Developed Gnome Gnolf, an AR mobile puzzle solving game,
-                    and implemented the design team’s blue-print for 7 levels of
-                    gameplay with stable graphics and interaction elements</li>
+                    and implemented the design team’s blue-print for <strong>7
+                      levels of gameplay</strong> with stable graphics and
+                    interaction elements</li>
                 </ul>
-                <hr>
+                <hr style = "border-color: rgba(255, 255, 255, 0.1);">
                 <table style="width: 100%;" border="none">
                   <tbody>
                     <tr>
@@ -233,15 +243,14 @@
                 </table>
                 <ul style="margin: 0 2em 0 0">
                   <li>Delivered and designed a series of interactive daily
-                    lectures on Three.js and OpenGL for an audience of 30+ high
-                    school students for the Harvard Summit for Young Leaders in
-                    China (HSYLC) seminar </li>
+                    lectures on Three.js and OpenGL<strong> for an audience of
+                      30+ high school students</strong> for the Harvard Summit
+                    for Young Leaders in China (HSYLC) seminar </li>
                   <li>Received recognition from the HSYLC marketing department
-                    as lecture was selected to spotlight for prospective
-                    students
-                  </li>
+                    as lecture was <strong>selected to spotlight for
+                      prospective students</strong> </li>
                 </ul>
-                <hr>
+                <hr style = "border-color: rgba(255, 255, 255, 0.1);">
                 <table style="width: 100%;" border="none">
                   <tbody>
                     <tr>
@@ -258,12 +267,10 @@
                   <li>Developed Collaborative Immersive Analytics for Coral Reef
                     Data, a platform for marine biologists to collaboratively
                     explore and analyze a comprehensive dataset with 1,300
-                    high-resolution coral reef photos
-                  </li>
+                    high-resolution coral reef photos </li>
                   <li>Designed relational database and employed tools such as
                     the unity MapsSDK to optimize data retrieval for individual
-                    users and multi-user interaction functions
-                  </li>
+                    users and multi-user interaction functions </li>
                 </ul>
               </section>
             </div>
