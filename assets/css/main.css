@@ -1716,7 +1716,7 @@ footer {
 
 .box header h3 {
 	font-size: 1.5em;
-	margin: -1em 0 -1em 0;
+	margin: -0.9em 0 -0.25em 0;
 }
 
 .box p {
@@ -2671,7 +2671,7 @@ ul.social li a.fa-google-plus:hover {
 	/* Box */
 
 	.box footer ul.actions li {
-		margin: 1em 0 0 0;
+		margin: 0em 0 0 0;
 		display: block;
 	}
 
