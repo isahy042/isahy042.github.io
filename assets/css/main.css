@@ -1706,7 +1706,7 @@ footer {
 .box.post header {
 	padding-top: 1em;
 	margin: 0 0 2em 0;
-
+	line-height: 250%;
 }
 
 .box.post h2 {
