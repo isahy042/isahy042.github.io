@@ -462,6 +462,7 @@ table {
 
 .row>.col-12 {
 	width: 100%;
+
 }
 
 .row>.off-12 {
@@ -1680,6 +1681,11 @@ header.major h2 {
 
 footer {
 	margin: 2.25em 0 0 0;
+}
+
+.column {
+	float: left;
+	width: 33.33333%;
 }
 
 /* Box */

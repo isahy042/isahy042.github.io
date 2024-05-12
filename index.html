@@ -18,15 +18,15 @@
       <nav id="nav">
         <ul>
           <li class="current"><a href="index.html">Home</a></li>
-          <li> <a href="projects.html">Projects</a>
-            <ul>
+          <li> <a href="#projects">Projects</a>
+            <!--  <ul>
               <li><a href="projects.html#academic">Academic &amp; Course
                   Projects</a></li>
               <li><a href="projects.html#research">Research</a></li>
               <li><a href="projects.html#personal">Personal Projects</a></li>
-            </ul>
+            </ul>-->
           </li>
-          <li><a href="courses.html">Related Courses<br>
+          <li><a href="#experience">Experience<br>
             </a></li>
         </ul>
       </nav>
@@ -45,15 +45,20 @@
                   href="https://www.csd.cs.cmu.edu/academics/masters/ms-in-computer-science">
                   M.S. in Computer Science (MSCS)</a> program at Carnegie
                 Mellon University. I specialize in AR/VR Development and
-                Graphics. </p>
-              <footer> <a href="projects.html" class="btn">
-                  My Projects </a> <a href="resume.html" class="btn">
-                  <i class="fa fa-bars"></i> Resume</a> <a href="https://www.linkedin.com/in/isahy/" class="btn"
-                  style="margin: -0.2em"> <i class="icon brands fa-linkedin-in">
-                  </i></a> </footer>
+                Computer Graphics. </p>
+              <footer>
+                <!-- <a href="projects.html" class="btn">
+                   My Projects </a>-->
+                <a href="resume.html" class="btn">
+                  <i class="fa fa-bars"></i> Resume</a>
+                <a href="https://www.linkedin.com/in/isahy/" class="btn" style="margin: -0.2em"> <i
+                    class="icon brands fa-linkedin-in">
+                  </i></a>
+              </footer>
             </section>
+            <!-- section 1 - introduction-->
           </div>
-          <div class="col-8 col-12-medium">
+          <div class="col-8 col-12-medium" id="home">
             <section>
               <ul class="contact">
                 <li>
@@ -72,7 +77,7 @@
                       <tr>
                         <td>
                           <h4>Carnegie Mellon University</h4>
-                          <p>Master of Science in Computer Science | GPA: 3.8
+                          <p>Master of Science in Computer Science | GPA: 3.94
                             / 4.0</p>
                         </td>
                         <td>Pittsburgh, PA<br>
@@ -109,8 +114,8 @@
                               Virtual Reality Simulation</h4>
                           </a>
                           <p><b>H. Lie</b>, K. Studer, Z. Zhao, B. Thomson, D.
-                            Turakhia, and J. Liu. Publisher: IEEE </p>
-                          <a class="collapsible"> View Abstract </a>
+                            Turakhia, and J. Liu. Publisher: IEEE ISMAR 2023</p>
+                          <a class="collapsible">View Abstract </a>
                           <div class="content">
                             <p> Abstract: Virtual Reality (VR) can support
                               effective and scalable training of psychomotor
@@ -145,148 +150,237 @@
                           </div>
                         </td>
                       </tr>
+                      <!-- new thing start -->
+                      <tr>
+                        <td> <a href="https://dl.acm.org/doi/10.1145/3613905.3648666">
+                            <h4>An Open-ended System in Virtual Reality for Training Machining Skills</h4>
+                          </a>
+                          <p>K. Studer, <b>H. Lie</b>, Z. Zhao, B. Thomson, D.
+                            Turakhia, and J. Liu. Publisher: ACM SIGCHI 2024 </p>
+                          <a href="https://youtu.be/FJi-FKBp8gc"> View Video (ACM SIGCHI Youtube) </a>
+                        </td>
+                      </tr>
+                      <!-- new thing end -->
                     </tbody>
                   </table>
                 </li>
               </ul>
             </section>
           </div>
-          <div class="col-12">
-            <section>
+
+          <!-- section 2 - project-->
+          <header id="projects">
+            <h2>Projects</h2>
+          </header>
+          <h4 style="align-items:right"><a href="projects.html" class="btn"> View More Projects </a></h4>
+
+          <div class="row">
+
+            <div class="col-4" style="margin: -1em 0 0 0">
+              <img width="100%" src="images/668scene.png">
               <header>
-                <h3 style="margin: -2em 0 0 0">Experience</h3>
+                <h3>Graphics Integrator</h3>
               </header>
-              <table style="width: 100%; margin: -1em 0 0 0" border="none">
-                <tbody>
-                  <tr>
-                    <td>
-                      <h4>MCG Health, Hearst Health Network</h4>
-                      <p>Software Engineer Intern</p>
-                    </td>
-                    <td>
-                      <div style="text-align: right;">Seattle, WA</div>
-                      <div style="text-align: right;"> June – August 2023</div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <ul style="margin: 0 2em 0 0">
-                <li>Implemented features to modernize CareWebQI, a platform
-                  streamlining care coordination, resulting in an <b>enhanced
-                    display of over 70,000 medical care guidelines and
-                    smoother user experience</b></li>
-                <li>Developed a proof of concept using <b>multi-tenant Azure
-                    Functions</b>, demonstrating the feasibility of a solution
-                  that<b> improved data accessibility by enabling same-day
-                    batch processing of patient episode summaries in the SQL
-                    client databases of 2,800+ hospitals</b></li>
-                <li>Streamlined patient data exchange between CareWebQI and
-                  partnering platforms using SMART on FHIR, improving
-                  interoperability and data consistency</li>
-              </ul>
-              <hr style="border-color: rgba(255, 255, 255, 0.1);">
-              <table style="width: 100%;" border="none">
-                <tbody>
-                  <tr>
-                    <td>
-                      <h4>MIT Learning Engineering and Practice Group</h4>
-                      <p>Software Developer and Researcher</p>
-                    </td>
-                    <td style="text-align: right;">Cambridge, MA<br>
-                      January 2022 – June 2023</td>
-                  </tr>
-                </tbody>
-              </table>
-              <ul style="margin: 0 2em 0 0">
-                <li>Led development of applications including Machining in the
-                  Dorm Room (PC &amp; VR) for manual mill drilling operation
-                  training, and SEM Exploration (AR) for simulation of the
-                  function and interior of the scanning electron microscope</li>
-                <li>Designed and implemented interactive features that
-                  significantly improved user immersion and engagement,
-                  resulting in a <strong>17% increase in training accuracy</strong>
-                  compared to traditional method</li>
-                <li>Compiled and implemented student and instructor feedback
-                  to support lab implementation of developed software for<strong>
-                    two MIT engineering courses with a total of 40 students</strong></li>
-              </ul>
-              <hr style="border-color: rgba(255, 255, 255, 0.1);">
-              <table style="width: 100%;" border="none">
-                <tbody>
-                  <tr>
-                    <td>
-                      <h4>MIT Scheller Teacher Education Program and The
-                        Education Arcade </h4>
-                      <p>Student Game Developer</p>
-                    </td>
-                    <td style="text-align: right;">Cambridge, MA<br>
-                      January 2022</td>
-                  </tr>
-                </tbody>
-              </table>
-              <ul style="margin: 0 2em 0 0">
-                <li>Developed Gnome Gnolf, an AR mobile puzzle solving game,
-                  and implemented the design team’s blue-print for <strong>7
-                    levels of gameplay</strong> with stable graphics and
-                  interaction elements</li>
-              </ul>
-              <hr style="border-color: rgba(255, 255, 255, 0.1);">
-              <table style="width: 100%;" border="none">
-                <tbody>
-                  <tr>
-                    <td>
-                      <h4>Harvard Association for US-China Relations</h4>
-                      <p>Seminar Lecturer</p>
-                    </td>
-                    <td style="text-align: right;">Cambridge, MA<br>
-                      August 2021</td>
-                  </tr>
-                </tbody>
-              </table>
-              <ul style="margin: 0 2em 0 0">
-                <li>Delivered and designed a series of interactive daily
-                  lectures on Three.js and OpenGL<strong> for an audience of
-                    30+ high school students</strong> for the Harvard Summit
-                  for Young Leaders in China (HSYLC) seminar </li>
-                <li>Received recognition from the HSYLC marketing department
-                  as lecture was <strong>selected to spotlight for
-                    prospective students</strong> </li>
-              </ul>
-              <hr style="border-color: rgba(255, 255, 255, 0.1);">
-              <table style="width: 100%;" border="none">
-                <tbody>
-                  <tr>
-                    <td>
-                      <h4>Wellesley College HCI Lab</h4>
-                      <p>Software Developer and Researcher </p>
-                    </td>
-                    <td style="text-align: right;">Wellesley, MA<br>
-                      June – August 2021</td>
-                  </tr>
-                </tbody>
-              </table>
-              <ul style="margin: 0 2em 0 0">
-                <li>Developed Collaborative Immersive Analytics for Coral Reef
-                  Data, a platform for marine biologists to collaboratively
-                  explore and analyze a comprehensive dataset with 1,300
-                  high-resolution coral reef photos </li>
-                <li>Designed relational database and employed tools such as
-                  the unity MapsSDK to optimize data retrieval for individual
-                  users and multi-user interaction functions </li>
-              </ul>
-            </section>
+              <p style="margin: -1.5em 0 0 0">A C++ physics-based renderer with support for various rendering
+                algorithms,
+                materials, illumination
+                sources, and
+                sensors.</p>
+            </div>
+
+            <div class="col-4" style="margin: -1em  0 0 0">
+              <video width="100%" autoplay muted loop>
+                <source src="images/672scene.mp4" type="video/mp4">
+              </video>
+              <header>
+                <h3>Real-time Renderer</h3>
+              </header>
+              <p style="margin: -1.5em 0 0 0">A 9000+ line C++ Vulkan real-time renderer built without pre-existing
+                frameworks.</p>
+            </div>
+
+            <div class="col-4" style="margin: -1em  0 0 0">
+              <img width="100%" src="images/mitdrscene.png">
+              <header>
+                <h3>VR Milling Training</h3>
+              </header>
+              <p style="margin: -1.5em 0 0 0">VR manual mill drilling operation training.</p>
+            </div>
           </div>
+
+        </div>
+        <!-- section 3 - experience-->
+        <div class="col-12" id="experience">
+          <section>
+            <header>
+              <br>
+              <h2 style="margin: 1em 0 0 0">Experience</h2>
+            </header>
+
+            <table style="width: 100%; margin: -1em 0 0 0" border="none">
+              <tbody>
+                <tr>
+                  <td>
+                    <p>Arthrex</p>
+                    <h4>Real-Time 3D Application Developer Intern</h4>
+                  </td>
+                  <td>
+                    <div style="text-align: right;">Naples, FL</div>
+                    <div style="text-align: right;"> May – August 2024</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <ul style="margin: 0 2em 0 0">
+              <li>Developed interactive XR applications for surgical education, training, and visualization</li>
+              <li>Collaborated with cross-functional teams to propose creative solutions and develop testing
+                procedures</li>
+              <li>Developed and tested a variety of graphic assets and shaders for Unity, Unreal Engine, and CMS
+                platforms</li>
+            </ul>
+
+            <hr style="border-color: rgba(255, 255, 255, 0.1);">
+
+            <table style="width: 100%;" border="none">
+              <tbody>
+                <tr>
+                  <td>
+                    <p>MIT Learning Engineering and Practice Group</p>
+                    <h4>Software Developer and Researcher</h4>
+
+                  </td>
+                  <td style="text-align: right;">Cambridge, MA<br>
+                    January 2022 – October 2023</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <ul style="margin: 0 2em 0 0">
+              <li><b>Led development of two XR applications: </b> Machining in the
+                Dorm Room (PC &amp; VR) for manual mill drilling operation
+                training, SEM Exploration (AR) for simulation of the
+                function and interior of the scanning electron microscope</li>
+              <li>Designed and implemented interactive features that
+                significantly improved user immersion and engagement,
+                resulting in a <strong>17% increase in training accuracy</strong>
+                compared to traditional method</li>
+              <li>Compiled and implemented student and instructor feedback
+                to support lab implementation of developed software for<strong>
+                  two MIT engineering courses with a total of 40 students</strong></li>
+            </ul>
+
+            <hr style="border-color: rgba(255, 255, 255, 0.1);">
+
+            <!-- start of a thing -->
+            <table style="width: 100%;" border="none">
+              <tbody>
+                <tr>
+                  <td>
+                    <p>MCG Health, Hearst Health Network</p>
+                    <h4>Software Engineer Intern</h4>
+                  </td>
+                  <td>
+                    <div style="text-align: right;">Seattle, WA</div>
+                    <div style="text-align: right;"> June – August 2023</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <ul style="margin: 0 2em 0 0">
+              <li>Implemented features to modernize CareWebQI, a platform
+                streamlining care coordination, resulting in an <b>enhanced
+                  display of over 70,000 medical care guidelines and
+                  smoother user experience</b></li>
+              <li>Created a multi-tenant Azure Functions proof of concept, demonstrating a solution that improved
+                data accessibility by
+                enabling same-day batch processing of patient episode summaries in the client databases of 2,800+
+                hospitals</li>
+              <li>Streamlined patient data exchange between CareWebQI and
+                partnering platforms using SMART on FHIR, improving
+                interoperability and data consistency</li>
+            </ul>
+
+            <hr style="border-color: rgba(255, 255, 255, 0.1);">
+            <!-- end of a thing -->
+
+            <table style="width: 100%;" border="none">
+              <tbody>
+                <tr>
+                  <td>
+                    <p>MIT Scheller Teacher Education Program and The
+                      Education Arcade </p>
+                    <h4>Game Developer</h4>
+                  </td>
+                  <td style="text-align: right;">Cambridge, MA<br>
+                    January 2022</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul style="margin: 0 2em 0 0">
+              <li>Developed Gnome Gnolf, an AR mobile puzzle solving game,
+                and implemented the design team’s blue-print for <strong>7
+                  levels of gameplay</strong> with stable graphics and
+                interaction elements</li>
+            </ul>
+            <hr style="border-color: rgba(255, 255, 255, 0.1);">
+            <table style="width: 100%;" border="none">
+              <tbody>
+                <tr>
+                  <td>
+                    <p>Harvard Association for US-China Relations</p>
+                    <h4>Seminar Lecturer</h4>
+                  </td>
+                  <td style="text-align: right;">Cambridge, MA<br>
+                    August 2021</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul style="margin: 0 2em 0 0">
+              <li>Delivered and designed a series of interactive daily
+                lectures on Three.js and OpenGL<strong> for an audience of
+                  30+ high school students</strong> for the Harvard Summit
+                for Young Leaders in China (HSYLC) seminar </li>
+              <li>Received recognition from the HSYLC marketing department
+                as lecture was <strong>selected to spotlight for
+                  prospective students</strong> </li>
+            </ul>
+            <hr style="border-color: rgba(255, 255, 255, 0.1);">
+            <table style="width: 100%;" border="none">
+              <tbody>
+                <tr>
+                  <td>
+                    <p>Wellesley College HCI Lab</p>
+                    <h4>Software Developer and Researcher </h4>
+                  </td>
+                  <td style="text-align: right;">Wellesley, MA<br>
+                    June – August 2021</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul style="margin: 0 2em 0 0">
+              <li>Developed Collaborative Immersive Analytics for Coral Reef
+                Data, a platform for marine biologists to collaboratively
+                explore and analyze a comprehensive dataset with 1,300
+                high-resolution coral reef photos </li>
+              <li>Designed relational database and employed tools such as
+                the unity MapsSDK to optimize data retrieval for individual
+                users and multi-user interaction functions </li>
+            </ul>
+          </section>
         </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+  </div>
+  </section>
+  <!-- Footer -->
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
   </div>
   <script>
     var coll = document.getElementsByClassName("collapsible");
